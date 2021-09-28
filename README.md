@@ -7,22 +7,29 @@ The code calculates a path in a given 2D environment, which includes a start poi
 
 ## Example
 For a given path like the following, 
-========
-===F====
-===.====
-===...==
-====.===
-====S===
+
+========  
+===F====  
+===.====  
+===...==  
+====.===  
+====S===  
 
 The code would return a solved path, like follows:
-========
-===F====
-===^====
-===^<.==
-====^===
-====S===
+
+========  
+===F====  
+===^====  
+===^<.==  
+====^===  
+====S===  
 
 
 ## Instructions to run
-1) Compile the 4 C++ files together into one executable file
-2) Run executable file 
+I have created a bunch of sample environments to run the code with (in the sampleTest folder), and I will demonstrate how to run the code using one such environment.  
+
+1) Compile the 4 C++ files together into one executable file: "g++ -std=c++14 -O -o assign1 Node.cpp NodeList.cpp PathSolver.cpp main.cpp"
+2) Run executable file with the path for environment AND a new filename to store the result: "./assign1 <sampleTest/sample01.env> result.out"
+3) Open the 'result.out' with any text editor to see the calculated path  
+
+Please note that you can pass your own environments, by passing its path in '<>' while running the executable file
